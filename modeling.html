@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style_lbdlight.css">
+</head>
+<body>
+    <ul class="gallery">
+                <li>
+                    <img  onclick="openModal('modelModal', 'modelSlides', 1)"
+                    src="images/charmod/render_kyu_02.png"/>
+                </li>
+                <li>
+                    <video  onclick="openModal('modelModal', 'modelSlides', 2)" autoplay muted loop>
+                        <source
+                        src="images/charmod/01_Kyu_Sculpt.mp4" />
+                    </video>
+                </li>
+                <li>
+                    <video  onclick="openModal('modelModal', 'modelSlides', 3)" autoplay muted loop>
+                        <source
+                        src="images/charmod/02_Tora_Sculpt.mp4" />
+                    </video>
+                </li>
+                <li>
+                    <video  onclick="openModal('modelModal', 'modelSlides', 4)" autoplay muted loop>
+                        <source
+                        src="images/charmod/03_Ayako_Sculpt.mp4" />
+                    </video>
+                </li>
+                <li>
+                    <video  onclick="openModal('modelModal', 'modelSlides', 5)" autoplay muted loop>
+                        <source
+                        src="images/charmod/ayako_wireframe.mp4" />
+                    </video>
+                </li>
+                <li>
+                    <video  onclick="openModal('modelModal', 'modelSlides', 6)" autoplay muted loop>
+                        <source
+                        src="images/charmod/kirby_body_turn.mp4" />
+                    </video>
+                </li>
+                <li>
+                    <video  onclick="openModal('modelModal', 'modelSlides', 7)" autoplay muted loop>
+                        <source
+                        src="images/charmod/kirby_wireframe_turn.mp4" />
+                    </video>
+                </li>
+                <li>
+                    <img  onclick="openModal('modelModal', 'modelSlides', 8)"
+                    src="images/charmod/render02.jpg"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('modelModal', 'modelSlides', 9)"
+                    src="images/charmod/render03.jpg"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('modelModal', 'modelSlides', 10)"
+                    src="images/charmod/fdet_body.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('modelModal', 'modelSlides', 11)"
+                    src="images/charmod/fdet_vetements.png"/>
+                </li>
+            
+            </ul>
+
+            <div id="modelModal" class="modal">
+                <span class="close cursor" onclick="closeModal(document.getElementById('modelModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
+                <div class="modal-content">
+
+                    <!--Slideshow-->
+                    <div class="slideshow mySlides modelSlides">
+                        <img  
+                        src="images/charmod/render_kyu_02.png" />
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <video  controls controlsList="nodownload">
+                            <source 
+                            src="images/charmod/01_Kyu_Sculpt.mp4" />
+                        </video>
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <video  controls controlsList="nodownload">
+                            <source 
+                            src="images/charmod/02_Tora_Sculpt.mp4" />
+                        </video>
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <video  controls controlsList="nodownload">
+                            <source 
+                            src="images/charmod/03_Ayako_Sculpt.mp4" />
+                        </video>
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <video  controls controlsList="nodownload">
+                            <source 
+                            src="images/charmod/ayako_wireframe.mp4" />
+                        </video>
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <video  controls controlsList="nodownload">
+                            <source 
+                            src="images/charmod/kirby_body_turn.mp4" />
+                        </video>
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <video  controls controlsList="nodownload">
+                            <source 
+                            src="images/charmod/kirby_wireframe_turn.mp4" />
+                        </video>
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <img  
+                        src="images/charmod/render02.jpg" />
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <img  
+                        src="images/charmod/render03.jpg" />
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <img  
+                        src="images/charmod/fdet_body.png" />
+                    </div>
+                    <div class="slideshow mySlides modelSlides">
+                        <img  
+                        src="images/charmod/fdet_vetements.png" />
+                    </div>
+
+                </div>
+                <a class="prev" onclick="plusSlides('modelSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
+                <a class="next" onclick="plusSlides('modelSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
+            </div>
+</body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style_lbdlight.css">
+</head>
+<body>
+    <ul class="gallery">
+                <li>
+                    <img  onclick="openModal('animModal', 'animSlides', 1)"
+                    src="images/anim/FERS_Plan037-38_final.gif" />
+                </li>
+                <li>
+                    <img  onclick="openModal('animModal', 'animSlides', 2)"
+                    src="images/anim/FERS_Plan048_final.gif" />
+                </li>
+                <li>
+                    <img  onclick="openModal('animModal', 'animSlides', 3)"
+                    src="images/anim/FERS_Plan049_final.gif" />
+                </li>
+            </ul>
+
+            <div id="animModal" class="modal">
+                <span class="close cursor" onclick="closeModal(document.getElementById('animModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
+                <div class="modal-content">
+
+                    <!--Slideshow-->
+                    <div class="slideshow mySlides animSlides">
+                        <img  
+                        src="images/anim/FERS_Plan037-38_final.gif"/>
+                    </div>
+                    <div class="slideshow mySlides animSlides">
+                        <img  
+                        src="images/anim/FERS_Plan048_final.gif"/>
+                    </div>
+                    <div class="slideshow mySlides animSlides">
+                        <img  
+                        src="images/anim/FERS_Plan049_final.gif" />
+                    </div>
+
+                </div>
+                <a class="prev" onclick="plusSlides('animSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
+                <a class="next" onclick="plusSlides('animSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
+            </div>
+</body>

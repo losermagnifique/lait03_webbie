@@ -90,7 +90,7 @@ header {
     margin:0;
     transition: max-height 0.4s ease, opacity 0.3s ease;
     opacity: 0;
-    font-size:xx-large;
+    font-size:3rem;
     font-weight: 500;
 }
 .menu li a {
@@ -98,7 +98,7 @@ header {
     margin: 2rem;
 }
 .menu.open {
-    max-height:50vh;
+    max-height: 100vh;
     opacity:1;
 }
 
@@ -171,15 +171,20 @@ div.flex-container {
     margin:0;
     color:#49210c;
     min-width: 0;
-    padding:1rem;
+    padding-top:2rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-bottom:1rem;
+    scroll-margin-top: 11rem;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
-.tabcontent {
-    padding-top:2rem;
-    scroll-margin-top: 11rem;
-    display: none;
-    animation: fadeEffect 1s;
+.main.fade-out {
+    opacity: 0;
 }
+
+
 img, video {
   user-select: none;
   -webkit-user-drag: none;
@@ -392,7 +397,7 @@ footer.mobile {
 
     /*Showreel*/
     .showreel {
-        width:90vw;
+        width:100%;
         height:auto;
     }
     .desc {
@@ -403,7 +408,7 @@ footer.mobile {
     /*Gallery*/
     ul.gallery li img,
     ul.gallery li video {
-        width: 90vw;
+        width: 100%;
         height:auto;
         border-radius : 0.5rem;
     }

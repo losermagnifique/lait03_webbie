@@ -1,25 +1,53 @@
 //portfolio_script
 
+window.addEventListener("DOMContentLoaded", () => {
+    loadPage("home");
+});
 // Tabs Navigation
-            function opentab(evt, tabName) {
-                var i, tabcontent, tablinks;
-        
-                tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-            const menu = document.querySelector(".menu");
-            const button = document.querySelector(".collapse");
-            if (menu) menu.classList.remove("open");
-            if (button) button.classList.remove("active");
-            }
-            document.getElementById('defaultTab').click();
+async function loadPage(page) {
+
+    const content = document.getElementById("content");
+
+    // Fade out
+    content.classList.add("fade-out");
+
+    // Wait for fade-out animation
+    setTimeout(async () => {
+
+        const response = await fetch(`${page}.html`);
+        const html = await response.text();
+
+        content.innerHTML = html;
+
+        // Fade back in
+        content.classList.remove("fade-out");
+
+    }, 300);
+}
+
+function navigate(event, page) {
+    event.preventDefault();
+
+    loadPage(page);
+
+    history.pushState({}, "", `?page=${page}`);
+
+    const menu = document.querySelector(".menu");
+    const button = document.querySelector(".collapse");
+
+    if (menu) menu.classList.remove("open");
+    if (button) button.classList.remove("active");
+}
+
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const page = params.get("page") || "home";
+
+    loadPage(page);
+});
             
 
 //Collapsible Menu

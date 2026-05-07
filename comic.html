@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style_lbdlight.css">
+</head>
+<body>
+    <ul class="gallery">
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 1)"
+                    src="images/comic/kirbys_first_lunar_ny.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 2)"
+                    src="images/comic/coeurdor__00_eng.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 3)"
+                    src="images/comic/coeurdor__01_eng.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 4)"
+                    src="images/comic/coeurdor__02_eng.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 5)"
+                    src="images/comic/coeurdor__03_eng.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 6)"
+                    src="images/comic/classskippers.png">
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 7)"
+                    src="images/comic/daiji_oneshot_001.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 8)"
+                    src="images/comic/daiji_oneshot_002.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 9)"
+                    src="images/comic/daiji_oneshot_003.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('comicModal', 'comicSlides', 10)"
+                    src="images/comic/daiji_oneshot_004.png"/>
+                </li>
+            </ul>
+
+            <div id="comicModal" class="modal">
+                <a class="close cursor" onclick="closeModal(document.getElementById('comicModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></a>
+                <div class="modal-content">
+
+                    <!--Slideshow-->
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/kirbys_first_lunar_ny.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/coeurdor__00_eng.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/coeurdor__01_eng.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/coeurdor__02_eng.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/coeurdor__03_eng.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/classskippers.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/daiji_oneshot_001.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/daiji_oneshot_002.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/daiji_oneshot_003.png"/>
+                    </div>
+                    <div class="slideshow mySlides comicSlides">
+                        <img 
+                        src="images/comic/daiji_oneshot_004.png"/>
+                    </div>
+
+
+                </div>
+                <a class="prev" onclick="plusSlides('comicSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
+                <a class="next" onclick="plusSlides('comicSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
+            </div>
+</body>

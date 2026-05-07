@@ -22,37 +22,44 @@
         <!--Navbar-->
         <ul class="tab">
             <li>
-                <a id="defaultTab" href="#home" class="tablinks active" onclick="opentab(event,'home')">
+                <a href="?page=home"
+                onclick="navigate(event, 'home')">
                     Home
                 </a>
             </li>
             <li>
-                <a href="#comic" class="tablinks active" onclick="opentab(event,'comic')">
+                <a href="?page=comic"
+                onclick="navigate(event, 'comic')">
                     Comic
                 </a>
             </li>
             <li>
-                <a href="#illustration" class="tablinks" onclick="opentab(event,'illustration')">
+                <a href="?page=illustration"
+                onclick="navigate(event, 'illustration')">
                     Illustration
                 </a>
             </li>
             <li>
-                <a href="#storyboard" class="tablinks" onclick="opentab(event,'storyboard')">
+                <a href="?page=storyboard"
+                onclick="navigate(event, 'storyboard')">
                     Storyboard
                 </a>
             </li>
             <li>
-                <a href="#animation" class="tablinks" onclick="opentab(event,'animation')">
+                <a href="?page=animation"
+                onclick="navigate(event, 'animation')">
                     Animation
                 </a>
             </li>
             <li>
-                <a href="#concept" class="tablinks" onclick="opentab(event,'concept')">
+                <a href="?page=concept"
+                onclick="navigate(event, 'concept')">
                     Concept Art
                 </a>
             </li>
             <li>
-                <a href="#model" class="tablinks" onclick="opentab(event,'model')">
+                <a href="?page=modeling"
+                onclick="navigate(event, 'modeling')">
                     Character Modeling
                 </a>
             </li>
@@ -65,7 +72,7 @@
         <!--Navbar-->
         <ul class="tab">
             <li>
-                <img loading="lazy" src="images/l03_lbd.png">
+                <img  src="images/l03_lbd.png">
             </li>
             <li>
                 <h1>
@@ -79,37 +86,45 @@
         </ul>
         <ul class="menu">
             <li>
-                <a id="defaultTab" href="#home" class="tablinks active" onclick="opentab(event,'home')">
+                <li>
+                <a href="?page=home"
+                onclick="navigate(event, 'home')">
                     Home
                 </a>
             </li>
             <li>
-                <a href="#comic" class="tablinks active" onclick="opentab(event,'comic')">
+                <a href="?page=comic"
+                onclick="navigate(event, 'comic')">
                     Comic
                 </a>
             </li>
             <li>
-                <a href="#illustration" class="tablinks" onclick="opentab(event,'illustration')">
+                <a href="?page=illustration"
+                onclick="navigate(event, 'illustration')">
                     Illustration
                 </a>
             </li>
             <li>
-                <a href="#storyboard" class="tablinks" onclick="opentab(event,'storyboard')">
+                <a href="?page=storyboard"
+                onclick="navigate(event, 'storyboard')">
                     Storyboard
                 </a>
             </li>
             <li>
-                <a href="#animation" class="tablinks" onclick="opentab(event,'animation')">
+                <a href="?page=animation"
+                onclick="navigate(event, 'animation')">
                     Animation
                 </a>
             </li>
             <li>
-                <a href="#concept" class="tablinks" onclick="opentab(event,'concept')">
-                     Concept Art
+                <a href="?page=concept"
+                onclick="navigate(event, 'concept')">
+                    Concept Art
                 </a>
             </li>
             <li>
-                <a href="#model" class="tablinks" onclick="opentab(event,'model')">
+                <a href="?page=modeling"
+                onclick="navigate(event, 'modeling')">
                     Character Modeling
                 </a>
             </li>
@@ -123,7 +138,7 @@
 <div class="flex-container">
     <!--Sidebar-->
     <div class="side">
-        <img loading="lazy" src="images/noa_og_portrait.png">
+        <img  src="images/noa_og_portrait.png">
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/noa-og/" target="_blank">
@@ -150,786 +165,8 @@
     </div>
 
     <!--Main Content-->
-    <div class="main">
-
-        <!--Home-->
-        <div id="home" class="tabcontent">
-            <h1>Hello, my name is Noa!</h1>
-            <p class="desc">
-                I’m a <b>storyteller at heart</b>, eager to <b>share emotions</b> with the viewer/reader. In order to do
-                so, I decided to use <b>various artistic mediums</b>... Such as writing, music, and most importantly <b>drawing</b>.
-                I take every opportunity and challenge with great excitement, willing to wholeheartedly engage in any production.
-            </p>
-
-            <video loading="lazy" class="showreel" controls autoplay muted loop controlsList="nodownload">
-                <source
-                src="images/story/RAMENSENTOU_SC002_ANIMATIC.mp4" />
-            </video>
-
-            <div class="carousel-wrapper">
-                <ul class="carousel">
-                    <li>
-                        <img loading="lazy"
-                        src="images/comic/kirbys_first_lunar_ny.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/illust/sunburst_perso.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/illust/luke.._final02.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/story/FERS_SC002_009.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/anim/FERS_Plan049_final.gif" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/concept/soupy_expressions.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/concept/main_lineup.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/concept/lookdev_ange_p1.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/charmod/darylpkmnturn04.gif" />
-                    </li>
-
-                    <!--loop-->
-
-                    <li>
-                        <img loading="lazy"
-                        src="images/comic/kirbys_first_lunar_ny.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/illust/sunburst_perso.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/illust/luke.._final02.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/story/FERS_SC002_009.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/anim/FERS_Plan049_final.gif" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/concept/soupy_expressions.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/concept/main_lineup.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/concept/lookdev_ange_p1.png" />
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                        src="images/charmod/darylpkmnturn04.gif" />
-                    </li>
-                    
-                </ul>
-            </div>
-
-        </div>
-
-        <!--Comic-->
-        <div id="comic" class="tabcontent">
-
-            <ul class="gallery">
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 1)"
-                    src="images/comic/kirbys_first_lunar_ny.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 2)"
-                    src="images/comic/coeurdor__00_eng.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 3)"
-                    src="images/comic/coeurdor__01_eng.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 4)"
-                    src="images/comic/coeurdor__02_eng.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 5)"
-                    src="images/comic/coeurdor__03_eng.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 6)"
-                    src="images/comic/classskippers.png">
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 7)"
-                    src="images/comic/daiji_oneshot_001.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 8)"
-                    src="images/comic/daiji_oneshot_002.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 9)"
-                    src="images/comic/daiji_oneshot_003.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('comicModal', 'comicSlides', 10)"
-                    src="images/comic/daiji_oneshot_004.png"/>
-                </li>
-            </ul>
-
-            <div id="comicModal" class="modal">
-                <a class="close cursor" onclick="closeModal(document.getElementById('comicModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></a>
-                <div class="modal-content">
-
-                    <!--Slideshow-->
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/kirbys_first_lunar_ny.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/coeurdor__00_eng.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/coeurdor__01_eng.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/coeurdor__02_eng.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/coeurdor__03_eng.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/classskippers.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/daiji_oneshot_001.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/daiji_oneshot_002.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/daiji_oneshot_003.png"/>
-                    </div>
-                    <div class="slideshow mySlides comicSlides">
-                        <img loading="lazy"
-                        src="images/comic/daiji_oneshot_004.png"/>
-                    </div>
-
-
-                </div>
-                <a class="prev" onclick="plusSlides('comicSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
-                <a class="next" onclick="plusSlides('comicSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
-            </div>
-
-        </div>
-
-        <!--Illustration-->
-        <div id="illustration" class="tabcontent">
-
-            <ul class="gallery">
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 1)"
-                    src="images/illust/HODGI-Noa_Grandir_flpejr2026.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 2)"
-                    src="images/illust/luke.._final02.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 3)"
-                    src="images/illust/teo_comm_v2.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 4)"
-                    src="images/illust/secretsantatodex.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 5)"
-                    src="images/illust/soupy time concept poster_v2.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 6)"
-                    src="images/illust/l3af_secretsanta_final01.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 7)"
-                    src="images/illust/whhaaa.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 8)"
-                    src="images/illust/light vs light_comp.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 9)"
-                    src="images/illust/fers_affiche_3_4.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 10)"
-                    src="images/illust/heheeeeeee_v2.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 11)"
-                    src="images/illust/sunburst_perso.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('illustModal', 'illustSlides', 12)"
-                    src="images/illust/cosmy.png"/>
-                </li>
-            </ul>
-
-            <div id="illustModal" class="modal">
-                <a class="close cursor" onclick="closeModal(document.getElementById('illustModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></a>
-                <div class="modal-content">
-
-                    <!--Slideshow-->
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/HODGI-Noa_Grandir_flpejr2026.png"/>
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/luke.._final02.png"/>
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/teo_comm_v2.png" />
-
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/secretsantatodex.png" />
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/soupy time concept poster_v2.png" />
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/l3af_secretsanta_final01.png" />
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/whhaaa.png" />
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/light vs light_comp.png" />
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/fers_affiche_3_4.png" />
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/heheeeeeee_v2.png" />
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/sunburst_perso.png" />
-                    </div>
-                    <div class="slideshow mySlides illustSlides">
-                        <img loading="lazy"
-                        src="images/illust/cosmy.png" />
-                    </div>
-                    
-                
-
-                </div>
-                <a class="prev" onclick="plusSlides('illustSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
-                <a class="next" onclick="plusSlides('illustSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
-            </div>
-            
-        </div>
-
-        <!--Sotryboard-->
-        <div id="storyboard" class="tabcontent">
-
-            <ul class="gallery">
-                <li>
-                    <video loading="lazy" onclick="openModal('storyModal', 'storySlides', 1)" autoplay muted loop>
-                        <source
-                        src="images/story/RAMENSENTOU_SC002_ANIMATIC.mp4" />
-                    </video>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 2)"
-                    src="images/story/FERS_SC002_005.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 3)"
-                    src="images/story/FERS_SC002_009.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 4)"
-                    src="images/story/FERS_SC002_010_1.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 5)" 
-                    src="images/story/FERS_SC002_010_2.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 6)" 
-                    src="images/story/FERS_SC002_016.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 7)" 
-                    src="images/story/FERS_SC002_019.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 8)" 
-                    src="images/story/FERS_SC002_060.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 9)" 
-                    src="images/story/Scan2025-05-29_124309_000_1.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 10)" 
-                    src="images/story/Scan2025-05-29_124309_000_2.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('storyModal', 'storySlides', 11)" 
-                    src="images/story/Scan2025-05-29_124309_003.png" />
-                </li>
-            </ul>
-
-            <div id="storyModal" class="modal">
-                <span class="close cursor" onclick="closeModal(document.getElementById('storyModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
-                <div class="modal-content">
-
-                    <!--Slideshow-->
-                    <div class="slideshow mySlides storySlides">
-                        <video loading="lazy" controls controlsList="nodownload">
-                            <source 
-                            src="images/story/RAMENSENTOU_SC002_ANIMATIC.mp4" />
-                        </video>
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/FERS_SC002_005.png"/>
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/FERS_SC002_009.png"/>
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/FERS_SC002_010_1.png" />
-
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/FERS_SC002_010_2.png" />
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/FERS_SC002_016.png" />
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/FERS_SC002_019.png" />
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/FERS_SC002_060.png" />
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/Scan2025-05-29_124309_000_1.png" />
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/Scan2025-05-29_124309_000_2.png" />
-                    </div>
-                    <div class="slideshow mySlides storySlides">
-                        <img loading="lazy" 
-                        src="images/story/Scan2025-05-29_124309_003.png" />
-                    </div>
-                    
-
-                </div>
-                <a class="prev" onclick="plusSlides('storySlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
-                <a class="next" onclick="plusSlides('storySlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
-            </div>
-
-        </div>
-
-        <!--Animation-->
-        <div id="animation" class="tabcontent">
-
-            <ul class="gallery">
-                <li>
-                    <img loading="lazy" onclick="openModal('animModal', 'animSlides', 1)"
-                    src="images/anim/FERS_Plan037-38_final.gif" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('animModal', 'animSlides', 2)"
-                    src="images/anim/FERS_Plan048_final.gif" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('animModal', 'animSlides', 3)"
-                    src="images/anim/FERS_Plan049_final.gif" />
-                </li>
-            </ul>
-
-            <div id="animModal" class="modal">
-                <span class="close cursor" onclick="closeModal(document.getElementById('animModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
-                <div class="modal-content">
-
-                    <!--Slideshow-->
-                    <div class="slideshow mySlides animSlides">
-                        <img loading="lazy" 
-                        src="images/anim/FERS_Plan037-38_final.gif"/>
-                    </div>
-                    <div class="slideshow mySlides animSlides">
-                        <img loading="lazy" 
-                        src="images/anim/FERS_Plan048_final.gif"/>
-                    </div>
-                    <div class="slideshow mySlides animSlides">
-                        <img loading="lazy" 
-                        src="images/anim/FERS_Plan049_final.gif" />
-                    </div>
-
-                </div>
-                <a class="prev" onclick="plusSlides('animSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
-                <a class="next" onclick="plusSlides('animSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
-            </div>
-
-        </div>
-
-        <!--Concept Art-->
-        <div id="concept" class="tabcontent">
-
-            <ul class="gallery">
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 1)"
-                    src="images/concept/lineup-pilote.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 2)"
-                    src="images/concept/soupy_expressions.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 3)"
-                    src="images/concept/sorciere_solana.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 4)"
-                    src="images/concept/perfpal01_kirby_v2.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 5)"
-                    src="images/concept/ultime_megaloser_perfpalguest_01.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 6)"
-                    src="images/concept/perfpal03_diamoon.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 7)"
-                    src="images/concept/main_lineup.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 8)"
-                    src="images/concept/side_lineup.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 9)"
-                    src="images/concept/superlineup_1.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 10)"
-                    src="images/concept/superlineup_2.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 11)"
-                    src="images/concept/lookdev_ange_p1.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 12)"
-                    src="images/concept/HODGI_Noa_BA2_lookdev_ange_p2.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 13)"
-                    src="images/concept/HODGI_Noa_BA2_lookdev_ange_p3.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 14)"
-                    src="images/concept/HODGI_Noa_BA2_lookdev_ange_p4.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 15)"
-                    src="images/concept/percy_planche1.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 16)"
-                    src="images/concept/BONNARDOT_Axel_HODGI_Noa_personnagesketch01.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 17)"
-                    src="images/concept/turn_kyu_full.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 18)"
-                    src="images/concept/turn_tora.png" />
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('conceptModal', 'conceptSlides', 19)"
-                    src="images/concept/daryl_low_poly_2.png" />
-                </li>
-
-            </ul>
-
-            <div id="conceptModal" class="modal">
-                <span class="close cursor" onclick="closeModal(document.getElementById('conceptModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
-                <div class="modal-content">
-
-                    <!--Slideshow-->
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/lineup-pilote.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/soupy_expressions.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/sorciere_solana.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/perfpal01_kirby_v2.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/ultime_megaloser_perfpalguest_01.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/perfpal03_diamoon.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/main_lineup.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/side_lineup.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/superlineup_1.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/superlineup_2.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/lookdev_ange_p1.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/HODGI_Noa_BA2_lookdev_ange_p2.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/HODGI_Noa_BA2_lookdev_ange_p3.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/HODGI_Noa_BA2_lookdev_ange_p4.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/percy_planche1.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/BONNARDOT_Axel_HODGI_Noa_personnagesketch01.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/turn_kyu_full.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/turn_tora.png"/>
-                    </div>
-                    <div class="slideshow mySlides conceptSlides">
-                        <img loading="lazy" 
-                        src="images/concept/daryl_low_poly_2.png"/>
-                    </div>
-                
-
-                </div>
-                <a class="prev" onclick="plusSlides('conceptSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
-                <a class="next" onclick="plusSlides('conceptSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
-            </div>
-
-        </div>
-
-        <!--Character Modeling-->
-        <div id="model" class="tabcontent">
-
-            <ul class="gallery">
-                <li>
-                    <img loading="lazy" onclick="openModal('modelModal', 'modelSlides', 1)"
-                    src="images/charmod/render_kyu_02.png"/>
-                </li>
-                <li>
-                    <video loading="lazy" onclick="openModal('modelModal', 'modelSlides', 2)" autoplay muted loop>
-                        <source
-                        src="images/charmod/01_Kyu_Sculpt.mp4" />
-                    </video>
-                </li>
-                <li>
-                    <video loading="lazy" onclick="openModal('modelModal', 'modelSlides', 3)" autoplay muted loop>
-                        <source
-                        src="images/charmod/02_Tora_Sculpt.mp4" />
-                    </video>
-                </li>
-                <li>
-                    <video loading="lazy" onclick="openModal('modelModal', 'modelSlides', 4)" autoplay muted loop>
-                        <source
-                        src="images/charmod/03_Ayako_Sculpt.mp4" />
-                    </video>
-                </li>
-                <li>
-                    <video loading="lazy" onclick="openModal('modelModal', 'modelSlides', 5)" autoplay muted loop>
-                        <source
-                        src="images/charmod/ayako_wireframe.mp4" />
-                    </video>
-                </li>
-                <li>
-                    <video loading="lazy" onclick="openModal('modelModal', 'modelSlides', 6)" autoplay muted loop>
-                        <source
-                        src="images/charmod/kirby_body_turn.mp4" />
-                    </video>
-                </li>
-                <li>
-                    <video loading="lazy" onclick="openModal('modelModal', 'modelSlides', 7)" autoplay muted loop>
-                        <source
-                        src="images/charmod/kirby_wireframe_turn.mp4" />
-                    </video>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('modelModal', 'modelSlides', 8)"
-                    src="images/charmod/render02.jpg"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('modelModal', 'modelSlides', 9)"
-                    src="images/charmod/render03.jpg"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('modelModal', 'modelSlides', 10)"
-                    src="images/charmod/fdet_body.png"/>
-                </li>
-                <li>
-                    <img loading="lazy" onclick="openModal('modelModal', 'modelSlides', 11)"
-                    src="images/charmod/fdet_vetements.png"/>
-                </li>
-            
-            </ul>
-
-            <div id="modelModal" class="modal">
-                <span class="close cursor" onclick="closeModal(document.getElementById('modelModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
-                <div class="modal-content">
-
-                    <!--Slideshow-->
-                    <div class="slideshow mySlides modelSlides">
-                        <img loading="lazy" 
-                        src="images/charmod/render_kyu_02.png" />
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <video loading="lazy" controls controlsList="nodownload">
-                            <source 
-                            src="images/charmod/01_Kyu_Sculpt.mp4" />
-                        </video>
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <video loading="lazy" controls controlsList="nodownload">
-                            <source 
-                            src="images/charmod/02_Tora_Sculpt.mp4" />
-                        </video>
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <video loading="lazy" controls controlsList="nodownload">
-                            <source 
-                            src="images/charmod/03_Ayako_Sculpt.mp4" />
-                        </video>
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <video loading="lazy" controls controlsList="nodownload">
-                            <source 
-                            src="images/charmod/ayako_wireframe.mp4" />
-                        </video>
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <video loading="lazy" controls controlsList="nodownload">
-                            <source 
-                            src="images/charmod/kirby_body_turn.mp4" />
-                        </video>
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <video loading="lazy" controls controlsList="nodownload">
-                            <source 
-                            src="images/charmod/kirby_wireframe_turn.mp4" />
-                        </video>
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <img loading="lazy" 
-                        src="images/charmod/render02.jpg" />
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <img loading="lazy" 
-                        src="images/charmod/render03.jpg" />
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <img loading="lazy" 
-                        src="images/charmod/fdet_body.png" />
-                    </div>
-                    <div class="slideshow mySlides modelSlides">
-                        <img loading="lazy" 
-                        src="images/charmod/fdet_vetements.png" />
-                    </div>
-
-                </div>
-                <a class="prev" onclick="plusSlides('modelSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
-                <a class="next" onclick="plusSlides('modelSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
-            </div>
-
-        </div>
-
-        <script src="script.js"></script>
-        
+    <div class="main" id="content">
+     
     </div>
 
 </div>
@@ -942,9 +179,7 @@
     <p>Mobile display is still a work in progress but will be ready soon!</p>
 </footer>
 
-  
+<script src="script.js"></script>
         
-
-
 </body>
 </html>

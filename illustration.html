@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style_lbdlight.css">
+</head>
+<body>
+    <ul class="gallery">
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 1)"
+                    src="images/illust/HODGI-Noa_Grandir_flpejr2026.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 2)"
+                    src="images/illust/luke.._final02.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 3)"
+                    src="images/illust/teo_comm_v2.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 4)"
+                    src="images/illust/secretsantatodex.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 5)"
+                    src="images/illust/soupy time concept poster_v2.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 6)"
+                    src="images/illust/l3af_secretsanta_final01.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 7)"
+                    src="images/illust/whhaaa.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 8)"
+                    src="images/illust/light vs light_comp.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 9)"
+                    src="images/illust/fers_affiche_3_4.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 10)"
+                    src="images/illust/heheeeeeee_v2.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 11)"
+                    src="images/illust/sunburst_perso.png"/>
+                </li>
+                <li>
+                    <img  onclick="openModal('illustModal', 'illustSlides', 12)"
+                    src="images/illust/cosmy.png"/>
+                </li>
+            </ul>
+
+            <div id="illustModal" class="modal">
+                <a class="close cursor" onclick="closeModal(document.getElementById('illustModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></a>
+                <div class="modal-content">
+
+                    <!--Slideshow-->
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/HODGI-Noa_Grandir_flpejr2026.png"/>
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/luke.._final02.png"/>
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/teo_comm_v2.png" />
+
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/secretsantatodex.png" />
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/soupy time concept poster_v2.png" />
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/l3af_secretsanta_final01.png" />
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/whhaaa.png" />
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/light vs light_comp.png" />
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/fers_affiche_3_4.png" />
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/heheeeeeee_v2.png" />
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/sunburst_perso.png" />
+                    </div>
+                    <div class="slideshow mySlides illustSlides">
+                        <img 
+                        src="images/illust/cosmy.png" />
+                    </div>
+                    
+                
+
+                </div>
+                <a class="prev" onclick="plusSlides('illustSlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
+                <a class="next" onclick="plusSlides('illustSlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
+            </div>
+</body>

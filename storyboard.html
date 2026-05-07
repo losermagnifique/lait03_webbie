@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style_lbdlight.css">
+</head>
+<body>
+    <ul class="gallery">
+                <li>
+                    <video  onclick="openModal('storyModal', 'storySlides', 1)" autoplay muted loop>
+                        <source
+                        src="images/story/RAMENSENTOU_SC002_ANIMATIC.mp4" />
+                    </video>
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 2)"
+                    src="images/story/FERS_SC002_005.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 3)"
+                    src="images/story/FERS_SC002_009.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 4)"
+                    src="images/story/FERS_SC002_010_1.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 5)" 
+                    src="images/story/FERS_SC002_010_2.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 6)" 
+                    src="images/story/FERS_SC002_016.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 7)" 
+                    src="images/story/FERS_SC002_019.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 8)" 
+                    src="images/story/FERS_SC002_060.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 9)" 
+                    src="images/story/Scan2025-05-29_124309_000_1.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 10)" 
+                    src="images/story/Scan2025-05-29_124309_000_2.png" />
+                </li>
+                <li>
+                    <img  onclick="openModal('storyModal', 'storySlides', 11)" 
+                    src="images/story/Scan2025-05-29_124309_003.png" />
+                </li>
+            </ul>
+
+            <div id="storyModal" class="modal">
+                <span class="close cursor" onclick="closeModal(document.getElementById('storyModal'))"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
+                <div class="modal-content">
+
+                    <!--Slideshow-->
+                    <div class="slideshow mySlides storySlides">
+                        <video  controls controlsList="nodownload">
+                            <source 
+                            src="images/story/RAMENSENTOU_SC002_ANIMATIC.mp4" />
+                        </video>
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/FERS_SC002_005.png"/>
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/FERS_SC002_009.png"/>
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/FERS_SC002_010_1.png" />
+
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/FERS_SC002_010_2.png" />
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/FERS_SC002_016.png" />
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/FERS_SC002_019.png" />
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/FERS_SC002_060.png" />
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/Scan2025-05-29_124309_000_1.png" />
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/Scan2025-05-29_124309_000_2.png" />
+                    </div>
+                    <div class="slideshow mySlides storySlides">
+                        <img  
+                        src="images/story/Scan2025-05-29_124309_003.png" />
+                    </div>
+                    
+
+                </div>
+                <a class="prev" onclick="plusSlides('storySlides', -1)"><i class="fa-solid fa-circle-left fa-2x"></i></a>
+                <a class="next" onclick="plusSlides('storySlides', 1)"><i class="fa-solid fa-circle-right fa-2x"></i></a>
+            </div>
+</body>
