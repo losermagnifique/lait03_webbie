@@ -275,7 +275,7 @@ ul.gallery video:hover {
 .slideshow img,
 .slideshow video {
     max-width:100%;
-    max-height:98vh;
+    max-height:98svh;
     width:auto;
     height: auto;
     border-radius:0.5rem;
@@ -300,6 +300,7 @@ ul.gallery video:hover {
 .close {
   color:#e1af83;
   position: absolute;
+  z-index:3;
   top: 10px;
   right: 25px;
 }
@@ -313,6 +314,7 @@ ul.gallery video:hover {
 .next {
   cursor: pointer;
   position: absolute;
+  z-index:3;
   top: 50%;
   width: auto;
   margin-top: -50px;
@@ -411,6 +413,16 @@ footer.mobile {
         width: 100%;
         height:auto;
         border-radius : 0.5rem;
+    }
+
+    .slideshow img,
+    .slideshow video {
+    max-width:100%;
+    max-height:none;
+    width:auto;
+    height: auto;
+    border-radius:0.5rem;
+    margin:auto;
     }
 
     /*Slideshow Commands*/
