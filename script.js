@@ -1,8 +1,5 @@
 //portfolio_script
 
-window.addEventListener("DOMContentLoaded", () => {
-    loadPage("home");
-});
 // Tabs Navigation
 async function loadPage(page) {
 
@@ -150,16 +147,21 @@ window.addEventListener("keydown", function (e) {
 let touchStartX = 0;
 let touchEndX = 0;
 
-document.querySelectorAll(".modal-content").forEach(content => {
+document.addEventListener("touchstart", (e) => {
 
-    content.addEventListener("touchstart", (e) => {
-        touchStartX = e.touches[0].clientX;
-    });
+    if (!e.target.closest(".modal-content")) return;
 
-    content.addEventListener("touchend", (e) => {
-        touchEndX = e.changedTouches[0].clientX;
-        handleSwipe();
-    });
+    touchStartX = e.touches[0].clientX;
+
+});
+
+document.addEventListener("touchend", (e) => {
+
+    if (!e.target.closest(".modal-content")) return;
+
+    touchEndX = e.changedTouches[0].clientX;
+
+    handleSwipe();
 
 });
 
